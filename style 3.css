@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding-top: 3vw;
+}
+
+h1,p {
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.5vw;
+}
+
+p {
+    color: silver;
+    padding-top: 1vw;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    gap:1vw;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+.gallery:hover > :not(:hover){
+    transform:
+    perspective(400px);
+    transform: 
+    rotateY(30deg);
+    scale: (.8);
+    margin-inline: -0.5vw;
+}
+
+.image:hover ~ .image {
+    transform:
+    perspective(400px);
+    transform: 
+    rotateY(-30deg);
+    scale: (.8);
+}
+
+
+.image {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 8%;
+    transition: .5s;
+    pointer-events: auto;
+    linear-gradient(
+        transparent,
+        rgba(0, 0, 0, o.15)
+    )
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px 5px white;
+}

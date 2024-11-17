@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    width: 100;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.header{
+    position: relative;
+}
+.image-container{
+    position: relative;
+    width:100%;
+    height: 300px;
+}
+.image-container img{
+    width: 100%;
+    height: 165%;
+}
+.header-body-section{
+    position: absolute;
+    top: 0.95em;;
+    width:100%;
+    color: rgb(105, 47, 222);
+}
+.nav{
+    position: absolute;
+    top: 0.95em;;
+    width:100%;
+    color: rgb(105, 47, 222);
+    font-weight: 545;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logocontainer p{
+    padding: 10px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding: 0px 7px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.Allenhouse-logo{
+width: 400px;
+}
+.container-header-body{
+    display: flex;
+    justify-content:flex-start ;
+}
